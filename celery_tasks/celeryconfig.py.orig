@@ -1,0 +1,16 @@
+from celery import Celery
+from kombu import Queue
+
+BROKER_URL = 'amqp://rabbit:123456@192.168.3.243:5672//'  # 使用RabbitMQ作为消息代理
+
+CELERY_QUEUES = (  # 设置add队列,绑定routing_key
+    Queue('add', routing_key='xue.add'),
+)
+
+CELERY_ROUTES = {  # projq.tasks.add这个任务进去add队列并routeing_key为xue.add
+    'projq.tasks.add': {
+        'queue': 'add',
+        'routing_key': 'xue.add',
+    }
+}
+
