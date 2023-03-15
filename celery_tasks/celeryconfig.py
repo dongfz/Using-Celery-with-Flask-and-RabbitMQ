@@ -1,7 +1,9 @@
 from kombu import Queue
 
+enable_utc = True
+timezone = 'Asia/Shanghai'
 broker_url = 'amqp://rabbit:123456@192.168.3.243:5672//'
-celery_result_backend = 'amqp://rabbit:123456@192.168.3.243:5672//'
+# celery_result_backend = 'amqp://rabbit:123456@192.168.3.243:5672//'
 task_queues = (
     Queue('task-test2', routing_key='route.task-test2'),
 )
