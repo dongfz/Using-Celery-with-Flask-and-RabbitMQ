@@ -9,8 +9,11 @@ class FlaskApp(Flask):
         self._activate_background_job()
 
     def _activate_background_job(self):
+        print(self.app_context())
         def run_job():
             print('1231313')
+            # while True:
+            #     print('1231313')
 
         t = threading.Thread(target=run_job)
         t.start()
