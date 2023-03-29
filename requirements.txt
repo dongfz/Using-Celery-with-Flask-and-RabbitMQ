@@ -1,5 +1,6 @@
 flask==2.2.2
 celery==5.2.7
-kombu==5.2.4
 python-dotenv==1.0.0
 gevent==22.10.2
+Flask-SQLAlchemy==3.0.3
+PyMySQL=1.0.3
