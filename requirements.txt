@@ -17,6 +17,7 @@ prompt-toolkit==3.0.38
 PyMySQL==1.0.3
 python-dotenv==1.0.0
 pytz==2023.3
+pyuwsgi==2.0.21
 SQLAlchemy==2.0.16
 typing_extensions==4.6.3
 vine==5.0.0
