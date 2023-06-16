@@ -9,4 +9,4 @@ def test2(tesat: str):
 
 @shared_task
 def test_sched_task(test: int):
-    print("12313515test_sched_task" )
+    print("12313515test_sched_task")
